@@ -1,0 +1,17 @@
+[build-system] #how project is built and packaged
+requires=["setuptools>=68"]
+build-backend="setuptools.build_meta"
+[project] # define project name version python requirements and runtime dependencies
+name="campus-os"
+version="0.1.0"
+description="An advanced student management system"
+requires-python=">=3.10"
+dependencies=[] # runtime only so built in (part of standard library and do not need to be imported from the internet) like csv and sqllite3
+ 
+[project.optional-dependencies] #optional dependency groups
+dev=[
+    "pytest",
+] #allows installation of testing tool
+
+[tool.setuptools.packages.find]
+where=["src"] #tells setuptools to discover packages inside src/

@@ -1,0 +1,22 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Testing and coverage
+.pytest_cache/
+.pytest-tmp/
+.coverage
+htmlcov/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
